@@ -225,10 +225,18 @@ Standard vocabulary (MeSH/SNOMED) and concept admin; embeddings-based similarity
 
 ---
 
-## 7. Open questions for you
+## 7. Decisions (answered 2026-11-22)
 
-1. **Product scope vs. the README.** The README describes paper-to-pilot as: given a paper or patent, find *the most viable clinical use, the hospitals with that need, the budget owner, and the evidence required for a paid pilot*. The prototype covers clinical use (concepts and matching), hospitals (doctor consultancies) and champions. It has **no budget owner and no "evidence for a paid pilot"** model. Should v1 match the prototype, with those added in v2, or should they be designed in now? If now, `Hospital` grows fields such as department, procurement contact and budget cycle, and `Paper` gets an evidence-gap checklist.
-2. **Who are the first users?** One city or network of clinicians, or open sign-up? This decides how strict doctor verification has to be on day one.
-3. **Hosting and data residency.** The sample data is India-based. Does patient-adjacent data need to stay in-region (DPDP Act)? That affects the choice of host and database region.
-4. **Patients' sign-in.** Magic-link email may not suit all patients. Is phone/OTP (for example, WhatsApp) needed for the nomination flow?
-5. **Stack preference.** The plan assumes Next.js + Postgres. Say if your team prefers something else (for example, a Python/FastAPI backend), and the module split above still applies.
+1. **Scope:** v1 matches what the prototype actually does. The README now describes that. Budget owner and paid-pilot evidence are not in v1.
+2. **Users:** open to any city, to build up the base. No region-specific gating or verification on day one.
+3. **Data:** no PII, only aggregated patterns and questions about patient groups. The policy that applies will be confirmed with clinicians before real data is collected. Server-side identifier checks stay in v1.
+4. **Login and security:** deferred. v1 ships without sign-in (see revised phases below).
+5. **Stack:** Next.js + TypeScript + Postgres is fine.
+
+### Revised phases (auth deferred)
+
+- **Phase 0–2:** unchanged.
+- **Phase 3 (writes, no auth):** server actions for every write, with server-side validation and identifier checks, plus IP-based rate limiting. Votes and nominations are deduplicated per browser with a cookie (a soft guard until sign-in exists). `authorId`, `submitterId` and `nominatorId` are nullable for now, with the typed name stored as in the prototype.
+- **Phase 4:** exact plus fuzzy duplicate-doctor review for admins (admin access protected by a single shared secret until login lands), a moderation hide flag.
+- **Phase 5:** hardening and launch.
+- **Phase 6 (later):** sign-in, roles, doctor claim/verify, endorse-only-as-yourself, and one vote or nomination per account. Make the user-ID columns required.
