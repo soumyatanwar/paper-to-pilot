@@ -240,3 +240,20 @@ Standard vocabulary (MeSH/SNOMED) and concept admin; embeddings-based similarity
 - **Phase 4:** exact plus fuzzy duplicate-doctor review for admins (admin access protected by a single shared secret until login lands), a moderation hide flag.
 - **Phase 5:** hardening and launch.
 - **Phase 6 (later):** sign-in, roles, doctor claim/verify, endorse-only-as-yourself, and one vote or nomination per account. Make the user-ID columns required.
+
+## 8. Build status (2026-11-22)
+
+| Phase | Status |
+|---|---|
+| 0. Scaffold | Done |
+| 1. Logic port + parity tests | Done: all 72 match scores and 12 champion scores reproduce the prototype exactly |
+| 2. Data + pages | Done: Prisma schema, seed, five sections |
+| 3. Writes (no auth) | Done: server-side validation and identifier checks, rate limiting, one vote or nomination per browser |
+| 4. Admin | Done: review queue, hide/restore, CSV import, duplicate merge, verification |
+| 5. Hardening | Done: 43 Playwright tests (every flow, axe in light and dark mode, phone width), CI with Postgres, privacy page, deploy notes |
+| 6. Sign-in and roles | Not started (deferred by decision 4) |
+
+Deviations from §3 made during the build:
+- `Hospital` stayed an array on `Doctor` (no join table). Nothing needs hospitals as their own records yet.
+- No `User` table until Phase 6. Authors are typed names; votes and nominations carry an anonymous browser id.
+- Duplicate detection runs in TypeScript (`lib/dedupe.ts`), not with `pg_trgm`. This is fine at the expected size.

@@ -1,0 +1,131 @@
+// Clinician Research Exchange. See docs/design-plan.md §3.
+// No sign-in yet (Phase 6): authors are stored as typed names, and votes and
+// nominations are de-duplicated by an anonymous browser id (`voterKey`).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// Moderation state shared by every user-written record.
+enum Visibility {
+  PUBLIC
+  NEEDS_REVIEW // tripped the soft identifier heuristic; hidden until an admin approves
+  HIDDEN       // removed by an admin
+}
+
+model Doctor {
+  id        String   @id @default(cuid())
+  name      String
+  nameKey   String // lib/matching/detect.ts nameKey(), for exact dedupe
+  specialty String?
+  city      String?
+  years     Int      @default(0)
+  clinic    String?
+  hospitals String[]
+  pubs      Int      @default(0)
+  trials    Int      @default(0)
+  teaching  Boolean  @default(false)
+  reviews   Int      @default(0)
+  interests String?
+  url       String?
+  nominated Boolean  @default(false) // added by a patient
+  verified  Boolean  @default(false)
+  isSample  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  nominations  Nomination[]
+  endorsements Endorsement[]
+
+  @@index([nameKey])
+}
+
+model Question {
+  id         String     @id @default(cuid())
+  author     String
+  specialty  String
+  city       String?
+  setting    String
+  volume     Int        @default(0)
+  question   String
+  population String?
+  tags       String[]
+  seedVotes  Int        @default(0) // votes carried over from the prototype
+  visibility Visibility @default(PUBLIC)
+  isSample   Boolean    @default(false)
+  createdAt  DateTime   @default(now())
+
+  votes QuestionVote[]
+}
+
+model QuestionVote {
+  questionId String
+  voterKey   String
+  createdAt  DateTime @default(now())
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([questionId, voterKey])
+}
+
+model Paper {
+  id              String     @id @default(cuid())
+  title           String
+  kind            String
+  stage           String
+  settings        String[]
+  summary         String
+  source          String?
+  role            String?
+  submitter       String?
+  conceptIds      String[] // annotations: conditions ticked by the submitter
+  claim           String?
+  population      String?
+  needs           String[]
+  limits          String?
+  rightsConfirmed Boolean    @default(false)
+  visibility      Visibility @default(PUBLIC)
+  isSample        Boolean    @default(false)
+  createdAt       DateTime   @default(now())
+
+  endorsements Endorsement[]
+}
+
+model Endorsement {
+  paperId   String
+  doctorId  String
+  createdAt DateTime @default(now())
+  paper     Paper    @relation(fields: [paperId], references: [id], onDelete: Cascade)
+  doctor    Doctor   @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  @@id([paperId, doctorId])
+}
+
+model Nomination {
+  id         String     @id @default(cuid())
+  doctorId   String
+  by         String // Patient | Family caregiver
+  reasons    String[]
+  area       String?
+  since      String?
+  note       String?    @db.VarChar(300)
+  voterKey   String? // null for seeded rows
+  visibility Visibility @default(PUBLIC)
+  isSample   Boolean    @default(false)
+  createdAt  DateTime   @default(now())
+  doctor     Doctor     @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  @@unique([doctorId, voterKey])
+}
+
+/// One row per write, for rate limiting by hashed IP.
+model WriteEvent {
+  id        BigInt   @id @default(autoincrement())
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+}

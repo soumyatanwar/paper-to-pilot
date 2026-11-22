@@ -8,7 +8,7 @@
 
 A match engine pairs questions with papers. A champion score then ranks which doctors would champion and run a pilot.
 
-> Status: a working prototype exists as a single-page Claude artifact. This repo is where it becomes a full app; see [`docs/design-plan.md`](docs/design-plan.md).
+> This repo is the full app, built from a single-page prototype (kept in `reference/`). See [`docs/design-plan.md`](docs/design-plan.md) for the plan and status.
 
 ## What it does
 
@@ -65,31 +65,60 @@ Each result shows why it matched: shared conditions, setting fit, endorsements, 
 - **Open to any city.** The base of clinicians, doctors and papers is collected from anywhere. The sample data is illustrative only.
 - Clinicians are consulted on which data-protection policy applies before real data is collected.
 
-## Roadmap
-1. Port the prototype to a Next.js + TypeScript + PostgreSQL app, with scoring parity tests against the prototype.
-2. Persistent multi-user data in place of the prototype's save-by-republishing.
-3. Later: sign-in, roles and security workflows (one vote or nomination per person, doctors endorse only as themselves), fuzzy duplicate-doctor detection, a standard medical vocabulary (MeSH/SNOMED).
+## Status
 
-Full details: [`docs/design-plan.md`](docs/design-plan.md).
+Phases 0–5 of [`docs/design-plan.md`](docs/design-plan.md) are built: the five sections, a Postgres database, every write flow, the team tools and the test suite. **Sign-in is not built yet (Phase 6).** Until then:
+- authors are the names people type, and anyone can endorse as any listed doctor (as in the prototype)
+- votes and nominations are limited to one per browser (a cookie), and writes are rate-limited per connection
+- the team area is protected by one shared password (`ADMIN_SECRET`)
 
-## Development
+## Running it
 
-Requires Node 22.
+Requires Node 22 and PostgreSQL 16 (or `docker compose up -d db`).
 
 ```bash
-npm install
-npm run dev        # http://localhost:3000
+cp .env.example .env      # then set ADMIN_SECRET and RATE_LIMIT_SALT
+npm install               # also generates the Prisma client
+npm run db:migrate        # apply migrations
+npm run db:seed           # optional: load the illustrative sample data (never in production)
+npm run dev               # http://localhost:3000
+```
+
+The team area is at `/admin`: review queue, hide or restore posts, CSV import of doctor profiles, duplicate-doctor merge and verification.
+
+### Tests
+
+```bash
 npm test           # unit + parity tests (Vitest)
 npm run typecheck
 npm run lint
-npm run e2e        # builds, starts and runs Playwright
+npm run e2e        # Playwright: every flow, accessibility (light + dark), phone width
 ```
 
-### Code layout
-- `lib/`: pure scoring and safety logic ported from the prototype (`matching/`, `scoring/`, `safety/`, `import/`, `vocab/`). No database or React imports.
-- `app/`: Next.js App Router pages. The CSS tokens come unchanged from the prototype.
-- `reference/clinician-research-exchange.html`: the original prototype, kept as the source of truth for scoring.
-- `tests/golden/`: output recorded by running the prototype's own JS (`npm run golden`). `tests/parity.test.ts` checks that `lib/` reproduces it exactly. The one deliberate difference is a fixed patient-name check, documented in `lib/safety/phi.ts`.
+`npm run e2e` creates a fresh database named `exchange_e2e_<timestamp>` for each run (it never resets an existing one), builds the app and runs against it. Locally these test databases accumulate; drop them when you like.
+
+### Deploying
+
+Any Node host plus managed Postgres works (for example Vercel, Render or Railway with Neon or Supabase).
+1. Set `DATABASE_URL`, `ADMIN_SECRET` (long and random) and `RATE_LIMIT_SALT`. The team area stays locked if `ADMIN_SECRET` is unset, or left as `change-me` in production.
+2. Run `npm run db:migrate` on each deploy, before starting the app. **Do not run the seed in production.**
+3. Rate limiting reads the client IP from `x-forwarded-for`, so deploy behind a proxy that sets it (all the hosts above do).
+4. Confirm the data-protection policy with participating clinicians before collecting real data (see `/privacy`).
+
+## Code layout
+- `lib/`: pure logic, no database or React. `matching/` (conditions, TF-IDF, match score), `scoring/` (champion score), `safety/` (identifier check, review heuristic), `import/` (CSV), `dedupe.ts` (duplicate doctors), `validate.ts` (form rules), `vocab/` (conditions list).
+- `lib/data.ts`, `lib/db.ts`, `lib/server/`: database access, the browser cookie, rate limiting, the admin session.
+- `app/`: Next.js pages and server actions (`app/actions.ts`, `app/admin/actions.ts`). `components/`: forms and UI pieces.
+- `prisma/`: schema, migrations, seed.
+- `reference/clinician-research-exchange.html`: the original prototype, the source of truth for scoring. `tests/golden/` holds its recorded output (`npm run golden`); `tests/parity.test.ts` checks that `lib/` reproduces it exactly.
+
+### Differences from the prototype
+- **Patient-name check fixed.** The prototype's pattern was case-sensitive and never caught names like "Mrs. Sharma".
+- **Second identifier check.** Posts mentioning a ward or bed number, an exact age with details about one person, or a recent event involving one patient are saved but held for review.
+- **"I see this too" is a toggle**, once per browser, and nominations are limited to one per browser per doctor.
+- **CSV import moved to the team area**, which also adds duplicate review, merge and verification.
+- **The "signal" amber is a little darker** (`#8F5E05`) to meet WCAG AA contrast.
+- **The champions note counting hidden patient-added doctors** now respects the city and specialty filters.
 
 ## License
 See [LICENSE](LICENSE).
