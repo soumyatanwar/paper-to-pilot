@@ -24,7 +24,10 @@ test.describe("Team tools", () => {
     const row = page.locator("tr", { hasText: text });
     await expect(row).toContainText("Mentions a ward, bed or room number");
     await row.getByRole("button", { name: "Approve" }).click();
-    await expect(page.locator("tr", { hasText: text }).getByRole("button", { name: "Hide" })).toBeVisible();
+    // Wait for the approval to land: the post leaves the review queue. (A "Hide" button
+    // is already shown while it waits for review, so it can't be the signal.)
+    await expect(page.locator("section", { hasText: "Waiting for review" }).locator("tr", { hasText: text })).toHaveCount(0);
+    await expect(page.locator("section", { hasText: "Recent public posts" }).locator("tr", { hasText: text })).toBeVisible();
 
     await page.goto("/questions");
     await expect(card(page, text)).toBeVisible();
