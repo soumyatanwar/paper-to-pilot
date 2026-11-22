@@ -72,5 +72,24 @@ Each result shows why it matched: shared conditions, setting fit, endorsements, 
 
 Full details: [`docs/design-plan.md`](docs/design-plan.md).
 
+## Development
+
+Requires Node 22.
+
+```bash
+npm install
+npm run dev        # http://localhost:3000
+npm test           # unit + parity tests (Vitest)
+npm run typecheck
+npm run lint
+npm run e2e        # builds, starts and runs Playwright
+```
+
+### Code layout
+- `lib/`: pure scoring and safety logic ported from the prototype (`matching/`, `scoring/`, `safety/`, `import/`, `vocab/`). No database or React imports.
+- `app/`: Next.js App Router pages. The CSS tokens come unchanged from the prototype.
+- `reference/clinician-research-exchange.html`: the original prototype, kept as the source of truth for scoring.
+- `tests/golden/`: output recorded by running the prototype's own JS (`npm run golden`). `tests/parity.test.ts` checks that `lib/` reproduces it exactly. The one deliberate difference is a fixed patient-name check, documented in `lib/safety/phi.ts`.
+
 ## License
 See [LICENSE](LICENSE).
