@@ -1,0 +1,2442 @@
+{
+  "generatedFrom": "reference/clinician-research-exchange.html",
+  "concepts": {
+    "questions": {
+      "q1": [
+        "dfu",
+        "diabetes",
+        "neuro",
+        "wound",
+        "screen"
+      ],
+      "q2": [
+        "hf",
+        "adherence"
+      ],
+      "q3": [
+        "pph"
+      ],
+      "q4": [
+        "anaemia",
+        "screen"
+      ],
+      "q5": [
+        "diabetes",
+        "htn",
+        "adherence"
+      ],
+      "q6": [
+        "jaundice"
+      ]
+    },
+    "inventions": {
+      "i1": [
+        "dfu",
+        "diabetes",
+        "neuro",
+        "wound",
+        "screen"
+      ],
+      "i2": [
+        "hf"
+      ],
+      "i3": [
+        "pph"
+      ],
+      "i4": [
+        "anaemia",
+        "screen"
+      ],
+      "i5": [
+        "diabetes",
+        "dr",
+        "screen"
+      ],
+      "i6": [
+        "jaundice",
+        "screen"
+      ],
+      "i7": [
+        "af",
+        "stroke"
+      ],
+      "i8": [
+        "dfu",
+        "diabetes",
+        "wound"
+      ],
+      "i9": [
+        "htn",
+        "adherence"
+      ],
+      "i10": [
+        "copd"
+      ],
+      "i11": [
+        "diabetes",
+        "ckd",
+        "screen"
+      ],
+      "i12": [
+        "tb",
+        "screen"
+      ]
+    }
+  },
+  "matches": [
+    {
+      "q": "q1",
+      "i": "i1",
+      "score": 84,
+      "shared": [
+        "dfu",
+        "diabetes",
+        "neuro",
+        "wound",
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 1,
+        "text": 0.4484516827366214,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 1
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i2",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i3",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i4",
+      "score": 39,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.3333333333333333,
+        "text": 0.03462397320259836,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i5",
+      "score": 56,
+      "shared": [
+        "diabetes",
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.6666666666666666,
+        "text": 0.04001269249537638,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i6",
+      "score": 39,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.3333333333333333,
+        "text": 0.046648893633833316,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i7",
+      "score": 25,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i8",
+      "score": 68,
+      "shared": [
+        "dfu",
+        "diabetes",
+        "wound"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 1,
+        "text": 0.11855073622996302,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i9",
+      "score": 30,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.13333333333333333,
+        "text": 0.03467738506983483,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i10",
+      "score": 8,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.3,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i11",
+      "score": 54,
+      "shared": [
+        "diabetes",
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.6666666666666666,
+        "text": 0.03807004065721129,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q1",
+      "i": "i12",
+      "score": 36,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.3333333333333333,
+        "text": 0.042134603271178045,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i1",
+      "score": 38,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.2,
+        "text": 0.04970122774064012,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 1
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i2",
+      "score": 57,
+      "shared": [
+        "hf"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.5,
+        "text": 0.4740210879685843,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i3",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i4",
+      "score": 22,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i5",
+      "score": 24,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i6",
+      "score": 32,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i7",
+      "score": 34,
+      "shared": [],
+      "taOnly": [
+        "Cardiovascular"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i8",
+      "score": 20,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i9",
+      "score": 60,
+      "shared": [
+        "adherence"
+      ],
+      "taOnly": [
+        "Cardiovascular"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.7,
+        "text": 0.2053748057821969,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i10",
+      "score": 19,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0.040194727209857235,
+        "setting": 1,
+        "ready": 0.3,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i11",
+      "score": 22,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q2",
+      "i": "i12",
+      "score": 19,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i1",
+      "score": 18,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 1
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i2",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i3",
+      "score": 85,
+      "shared": [
+        "pph"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 1,
+        "text": 0.5830537820315498,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i4",
+      "score": 16,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0.13558050025404067,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i5",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i6",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i7",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i8",
+      "score": 10,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i9",
+      "score": 14,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0.06848734578603101,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i10",
+      "score": 8,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.3,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i11",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q3",
+      "i": "i12",
+      "score": 10,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i1",
+      "score": 40,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.5,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 1
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i2",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i3",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i4",
+      "score": 75,
+      "shared": [
+        "anaemia",
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 1,
+        "text": 0.2823592145867979,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i5",
+      "score": 48,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.5,
+        "text": 0,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i6",
+      "score": 35,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.5,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i7",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i8",
+      "score": 10,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i9",
+      "score": 22,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.2,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i10",
+      "score": 8,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.3,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i11",
+      "score": 47,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.5,
+        "text": 0.062141630776198664,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q4",
+      "i": "i12",
+      "score": 47,
+      "shared": [
+        "screen"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.5,
+        "text": 0.19104158277337197,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i1",
+      "score": 50,
+      "shared": [
+        "diabetes"
+      ],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.4666666666666666,
+        "text": 0.036678239635934744,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 1
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i2",
+      "score": 19,
+      "shared": [],
+      "taOnly": [
+        "Cardiovascular"
+      ],
+      "settingFit": false,
+      "parts": {
+        "concept": 0.13333333333333333,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i3",
+      "score": 16,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0.064715896463438,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i4",
+      "score": 29,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.13333333333333333,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i5",
+      "score": 46,
+      "shared": [
+        "diabetes"
+      ],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.4666666666666666,
+        "text": 0.019602633144027982,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i6",
+      "score": 29,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.13333333333333333,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i7",
+      "score": 32,
+      "shared": [],
+      "taOnly": [
+        "Cardiovascular"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.13333333333333333,
+        "text": 0.05887846443213107,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i8",
+      "score": 39,
+      "shared": [
+        "diabetes"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.3333333333333333,
+        "text": 0.14092875299739901,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i9",
+      "score": 67,
+      "shared": [
+        "htn",
+        "adherence"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.6666666666666666,
+        "text": 0.5530056678179106,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i10",
+      "score": 8,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.3,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i11",
+      "score": 44,
+      "shared": [
+        "diabetes"
+      ],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.4666666666666666,
+        "text": 0.018650907855495547,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q5",
+      "i": "i12",
+      "score": 26,
+      "shared": [],
+      "taOnly": [
+        "Care delivery"
+      ],
+      "settingFit": true,
+      "parts": {
+        "concept": 0.13333333333333333,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i1",
+      "score": 28,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 1
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i2",
+      "score": 23,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i3",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i4",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i5",
+      "score": 15,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i6",
+      "score": 81,
+      "shared": [
+        "jaundice"
+      ],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 1,
+        "text": 0.5044346783320703,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i7",
+      "score": 25,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 1,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i8",
+      "score": 20,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i9",
+      "score": 25,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0.06522062034823445,
+        "setting": 1,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i10",
+      "score": 18,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": true,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 1,
+        "ready": 0.3,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i11",
+      "score": 13,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.8,
+        "endorse": 0
+      }
+    },
+    {
+      "q": "q6",
+      "i": "i12",
+      "score": 10,
+      "shared": [],
+      "taOnly": [],
+      "settingFit": false,
+      "parts": {
+        "concept": 0,
+        "text": 0,
+        "setting": 0.3,
+        "ready": 0.5,
+        "endorse": 0
+      }
+    }
+  ],
+  "champions": {
+    "d1": {
+      "total": 80,
+      "dual": true,
+      "posts": 1,
+      "endorsed": 1,
+      "submitted": 0,
+      "nominations": 2,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          5,
+          15
+        ],
+        [
+          "Activity on exchange",
+          13,
+          15
+        ],
+        [
+          "Patient trust",
+          10,
+          15
+        ],
+        [
+          "Publications",
+          7.5,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          4.840738754097614,
+          5
+        ]
+      ]
+    },
+    "d2": {
+      "total": 77,
+      "dual": true,
+      "posts": 1,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          15,
+          15
+        ],
+        [
+          "Activity on exchange",
+          8,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          10,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          4.4755291849290755,
+          5
+        ]
+      ]
+    },
+    "d3": {
+      "total": 52,
+      "dual": true,
+      "posts": 1,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          0,
+          15
+        ],
+        [
+          "Activity on exchange",
+          8,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          3.75,
+          10
+        ],
+        [
+          "Interests & teaching",
+          5,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          5,
+          5
+        ]
+      ]
+    },
+    "d4": {
+      "total": 60,
+      "dual": true,
+      "posts": 1,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          5,
+          15
+        ],
+        [
+          "Activity on exchange",
+          8,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          2.5,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          4.690567797327379,
+          5
+        ]
+      ]
+    },
+    "d5": {
+      "total": 53,
+      "dual": true,
+      "posts": 1,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 1,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          0,
+          15
+        ],
+        [
+          "Activity on exchange",
+          8,
+          15
+        ],
+        [
+          "Patient trust",
+          4,
+          15
+        ],
+        [
+          "Publications",
+          1.25,
+          10
+        ],
+        [
+          "Interests & teaching",
+          5,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          5,
+          5
+        ]
+      ]
+    },
+    "d6": {
+      "total": 74,
+      "dual": true,
+      "posts": 1,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 1,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          10,
+          15
+        ],
+        [
+          "Activity on exchange",
+          8,
+          15
+        ],
+        [
+          "Patient trust",
+          6,
+          15
+        ],
+        [
+          "Publications",
+          5,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          4.590213833680827,
+          5
+        ]
+      ]
+    },
+    "d7": {
+      "total": 49,
+      "dual": false,
+      "posts": 0,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          4,
+          20
+        ],
+        [
+          "Trial experience",
+          15,
+          15
+        ],
+        [
+          "Activity on exchange",
+          0,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          10,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          6,
+          10
+        ],
+        [
+          "Patient reach",
+          4.035385027804282,
+          5
+        ]
+      ]
+    },
+    "d8": {
+      "total": 56,
+      "dual": true,
+      "posts": 0,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          5,
+          15
+        ],
+        [
+          "Activity on exchange",
+          0,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          6.25,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          5,
+          5
+        ]
+      ]
+    },
+    "d9": {
+      "total": 48,
+      "dual": true,
+      "posts": 0,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          5,
+          15
+        ],
+        [
+          "Activity on exchange",
+          0,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          3.75,
+          10
+        ],
+        [
+          "Interests & teaching",
+          5,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          4.563039040049068,
+          5
+        ]
+      ]
+    },
+    "d10": {
+      "total": 45,
+      "dual": true,
+      "posts": 0,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          0,
+          15
+        ],
+        [
+          "Activity on exchange",
+          0,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          5,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          6,
+          10
+        ],
+        [
+          "Patient reach",
+          3.857241771164995,
+          5
+        ]
+      ]
+    },
+    "d11": {
+      "total": 47,
+      "dual": true,
+      "posts": 0,
+      "endorsed": 1,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          20,
+          20
+        ],
+        [
+          "Trial experience",
+          0,
+          15
+        ],
+        [
+          "Activity on exchange",
+          5,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          2.5,
+          10
+        ],
+        [
+          "Interests & teaching",
+          5,
+          10
+        ],
+        [
+          "Career stage",
+          10,
+          10
+        ],
+        [
+          "Patient reach",
+          4.915437169516145,
+          5
+        ]
+      ]
+    },
+    "d12": {
+      "total": 42,
+      "dual": false,
+      "posts": 0,
+      "endorsed": 0,
+      "submitted": 0,
+      "nominations": 0,
+      "parts": [
+        [
+          "Clinic + hospital",
+          4,
+          20
+        ],
+        [
+          "Trial experience",
+          10,
+          15
+        ],
+        [
+          "Activity on exchange",
+          0,
+          15
+        ],
+        [
+          "Patient trust",
+          0,
+          15
+        ],
+        [
+          "Publications",
+          8.75,
+          10
+        ],
+        [
+          "Interests & teaching",
+          10,
+          10
+        ],
+        [
+          "Career stage",
+          6,
+          10
+        ],
+        [
+          "Patient reach",
+          3.5344439419328495,
+          5
+        ]
+      ]
+    }
+  },
+  "relevantForQuestion": {
+    "q1": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "dfu",
+          "diabetes",
+          "neuro",
+          "screen"
+        ]
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "screen"
+        ]
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "diabetes",
+          "screen"
+        ]
+      },
+      {
+        "d": "d6",
+        "score": 56,
+        "hit": []
+      }
+    ],
+    "q2": [
+      {
+        "d": "d2",
+        "score": 73,
+        "hit": [
+          "hf",
+          "adherence"
+        ]
+      },
+      {
+        "d": "d6",
+        "score": 71,
+        "hit": [
+          "adherence"
+        ]
+      },
+      {
+        "d": "d1",
+        "score": 60,
+        "hit": []
+      },
+      {
+        "d": "d5",
+        "score": 55,
+        "hit": [
+          "adherence"
+        ]
+      }
+    ],
+    "q3": [
+      {
+        "d": "d3",
+        "score": 54,
+        "hit": [
+          "pph"
+        ]
+      }
+    ],
+    "q4": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "screen"
+        ]
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "anaemia",
+          "screen"
+        ]
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "screen"
+        ]
+      },
+      {
+        "d": "d6",
+        "score": 56,
+        "hit": []
+      }
+    ],
+    "q5": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "diabetes"
+        ]
+      },
+      {
+        "d": "d2",
+        "score": 73,
+        "hit": [
+          "adherence"
+        ]
+      },
+      {
+        "d": "d6",
+        "score": 71,
+        "hit": [
+          "adherence"
+        ]
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "diabetes"
+        ]
+      }
+    ],
+    "q6": [
+      {
+        "d": "d6",
+        "score": 71,
+        "hit": [
+          "jaundice"
+        ]
+      },
+      {
+        "d": "d4",
+        "score": 45,
+        "hit": []
+      }
+    ]
+  },
+  "relevantForInvention": {
+    "i1": [
+      {
+        "d": "d1",
+        "score": 85,
+        "hit": [
+          "dfu",
+          "diabetes",
+          "neuro",
+          "screen"
+        ],
+        "end": true
+      },
+      {
+        "d": "d11",
+        "score": 60,
+        "hit": [
+          "dfu",
+          "diabetes",
+          "wound"
+        ],
+        "end": true
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "diabetes",
+          "screen"
+        ],
+        "end": false
+      }
+    ],
+    "i2": [
+      {
+        "d": "d2",
+        "score": 73,
+        "hit": [
+          "hf"
+        ],
+        "end": false
+      },
+      {
+        "d": "d5",
+        "score": 40,
+        "hit": [],
+        "end": false
+      },
+      {
+        "d": "d7",
+        "score": 37,
+        "hit": [],
+        "end": false
+      }
+    ],
+    "i3": [
+      {
+        "d": "d3",
+        "score": 54,
+        "hit": [
+          "pph"
+        ],
+        "end": false
+      }
+    ],
+    "i4": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "anaemia",
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d6",
+        "score": 56,
+        "hit": [],
+        "end": false
+      }
+    ],
+    "i5": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "diabetes",
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "diabetes",
+          "dr",
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d6",
+        "score": 56,
+        "hit": [],
+        "end": false
+      }
+    ],
+    "i6": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d6",
+        "score": 71,
+        "hit": [
+          "jaundice"
+        ],
+        "end": false
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      }
+    ],
+    "i7": [
+      {
+        "d": "d2",
+        "score": 58,
+        "hit": [],
+        "end": false
+      },
+      {
+        "d": "d5",
+        "score": 40,
+        "hit": [],
+        "end": false
+      },
+      {
+        "d": "d7",
+        "score": 52,
+        "hit": [
+          "af"
+        ],
+        "end": false
+      },
+      {
+        "d": "d12",
+        "score": 47,
+        "hit": [
+          "af",
+          "stroke"
+        ],
+        "end": false
+      }
+    ],
+    "i8": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "dfu",
+          "diabetes"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "diabetes"
+        ],
+        "end": false
+      },
+      {
+        "d": "d5",
+        "score": 55,
+        "hit": [
+          "diabetes"
+        ],
+        "end": false
+      },
+      {
+        "d": "d11",
+        "score": 50,
+        "hit": [
+          "dfu",
+          "diabetes",
+          "wound"
+        ],
+        "end": false
+      }
+    ],
+    "i9": [
+      {
+        "d": "d2",
+        "score": 73,
+        "hit": [
+          "adherence"
+        ],
+        "end": false
+      },
+      {
+        "d": "d6",
+        "score": 71,
+        "hit": [
+          "adherence"
+        ],
+        "end": false
+      },
+      {
+        "d": "d1",
+        "score": 60,
+        "hit": [],
+        "end": false
+      },
+      {
+        "d": "d5",
+        "score": 55,
+        "hit": [
+          "htn",
+          "adherence"
+        ],
+        "end": false
+      }
+    ],
+    "i10": [
+      {
+        "d": "d9",
+        "score": 51,
+        "hit": [
+          "copd"
+        ],
+        "end": false
+      },
+      {
+        "d": "d5",
+        "score": 40,
+        "hit": [],
+        "end": false
+      }
+    ],
+    "i11": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "diabetes",
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "diabetes",
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d6",
+        "score": 56,
+        "hit": [],
+        "end": false
+      }
+    ],
+    "i12": [
+      {
+        "d": "d1",
+        "score": 75,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d4",
+        "score": 60,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d8",
+        "score": 57,
+        "hit": [
+          "screen"
+        ],
+        "end": false
+      },
+      {
+        "d": "d6",
+        "score": 56,
+        "hit": [],
+        "end": false
+      }
+    ]
+  },
+  "phi": [
+    {
+      "text": "Call me on 9876543210",
+      "problems": [
+        "a 10-digit number (phone?)"
+      ]
+    },
+    {
+      "text": "Seen on 12/03/2025 in OPD",
+      "problems": [
+        "a specific date"
+      ]
+    },
+    {
+      "text": "UHID 44321 was admitted",
+      "problems": [
+        "a record or ID number"
+      ]
+    },
+    {
+      "text": "Mrs. Sharma had a foot ulcer",
+      "problems": []
+    },
+    {
+      "text": "write to someone@example.com",
+      "problems": [
+        "an email address"
+      ]
+    },
+    {
+      "text": "Baby of Priya was jaundiced",
+      "problems": []
+    },
+    {
+      "text": "Type 2 diabetes for 10+ years, mostly working-age men",
+      "problems": []
+    },
+    {
+      "text": "the 34-year-old teacher from Ward 6",
+      "problems": []
+    }
+  ],
+  "csv": [
+    {
+      "line": "Dr. A Example,Cardiology,Pune,12,Example Heart Clinic,City Hospital;Metro Hospital,4,1,yes,300,heart failure,https://x",
+      "cells": [
+        "Dr. A Example",
+        "Cardiology",
+        "Pune",
+        "12",
+        "Example Heart Clinic",
+        "City Hospital;Metro Hospital",
+        "4",
+        "1",
+        "yes",
+        "300",
+        "heart failure",
+        "https://x"
+      ]
+    },
+    {
+      "line": "\"Dr. Quote, Jr\",General Medicine,\"Pune\",\"\",,,0,0,no,0,\"says \"\"hi\"\"\",",
+      "cells": [
+        "Dr. Quote, Jr",
+        "General Medicine",
+        "Pune",
+        "",
+        "",
+        "",
+        "0",
+        "0",
+        "no",
+        "0",
+        "says \"hi\"",
+        ""
+      ]
+    }
+  ]
+}

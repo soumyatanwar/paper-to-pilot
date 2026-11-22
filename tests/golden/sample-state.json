@@ -1,0 +1,557 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "q1",
+      "author": "Dr. Kavya Iyer",
+      "specialty": "Diabetology",
+      "city": "Bengaluru",
+      "setting": "Clinic / OPD",
+      "volume": 320,
+      "question": "Most of my diabetic patients come in with a foot ulcer that is already infected. Can we pick up pre-ulcer changes in the OPD, before the skin breaks?",
+      "population": "Type 2 diabetes for 10+ years, many with neuropathy, mostly working-age men from peri-urban areas",
+      "tags": [
+        "diabetic foot",
+        "screening"
+      ],
+      "votes": 7,
+      "created": "2026-11-02",
+      "sample": true
+    },
+    {
+      "id": "q2",
+      "author": "Dr. Arjun Menon",
+      "specialty": "Cardiology",
+      "city": "Kochi",
+      "setting": "Home",
+      "volume": 90,
+      "question": "Heart failure patients I discharge are readmitted within 30 days with fluid overload. Is there a home signal we can watch a week before decompensation?",
+      "population": "HFrEF after an index admission, older adults, family caregiver at home",
+      "tags": [
+        "heart failure",
+        "remote monitoring"
+      ],
+      "votes": 5,
+      "created": "2026-11-05",
+      "sample": true
+    },
+    {
+      "id": "q3",
+      "author": "Dr. Sneha Patil",
+      "specialty": "Obstetrics & Gynaecology",
+      "city": "Pune",
+      "setting": "Labour ward",
+      "volume": 150,
+      "question": "We estimate blood loss after delivery by eye and I think we under-read PPH. Would measured blood loss change when we escalate?",
+      "population": "Vaginal deliveries at a mid-size private maternity unit",
+      "tags": [
+        "pph"
+      ],
+      "votes": 4,
+      "created": "2026-11-09",
+      "sample": true
+    },
+    {
+      "id": "q4",
+      "author": "Dr. Farah Siddiqui",
+      "specialty": "Paediatrics",
+      "city": "Hyderabad",
+      "setting": "Community / camps",
+      "volume": 600,
+      "question": "Anaemia is common among the adolescent girls we see at school camps. Is there a needle-free way to screen haemoglobin quickly on site?",
+      "population": "Girls aged 11–17 at government schools, screened at quarterly camps",
+      "tags": [
+        "anaemia",
+        "screening"
+      ],
+      "votes": 6,
+      "created": "2026-11-11",
+      "sample": true
+    },
+    {
+      "id": "q5",
+      "author": "Dr. Rahul Deshmukh",
+      "specialty": "General Medicine",
+      "city": "Pune",
+      "setting": "Clinic / OPD",
+      "volume": 400,
+      "question": "Blood pressure stays uncontrolled at follow-up even on two or three drugs. Is the problem adherence or slow titration, and can a home protocol fix it?",
+      "population": "Hypertension, 40–70 years, many also diabetic, reachable on WhatsApp",
+      "tags": [
+        "hypertension",
+        "adherence"
+      ],
+      "votes": 3,
+      "created": "2026-11-14",
+      "sample": true
+    },
+    {
+      "id": "q6",
+      "author": "Dr. Lakshmi Narayan",
+      "specialty": "Paediatrics",
+      "city": "Chennai",
+      "setting": "Home",
+      "volume": 120,
+      "question": "Newborns discharged at 48 hours come back on day 4–5 with high bilirubin. Could parents check jaundice at home and know when to return?",
+      "population": "Term newborns from a private maternity hospital, first-time parents",
+      "tags": [
+        "neonatal jaundice"
+      ],
+      "votes": 2,
+      "created": "2026-11-18",
+      "sample": true
+    }
+  ],
+  "inventions": [
+    {
+      "id": "i1",
+      "title": "Smartphone thermal imaging for pre-ulcer detection in the diabetic foot",
+      "kind": "Device",
+      "stage": "Pilot data",
+      "settings": [
+        "Clinic / OPD",
+        "Home"
+      ],
+      "summary": "A clip-on thermal camera and app compare left and right foot temperature; a sustained asymmetry above 2.2 °C flags inflammation that precedes diabetic foot ulcer in neuropathic patients.",
+      "source": "",
+      "role": "Inventor",
+      "submitter": "Sample inventor team",
+      "tagIds": [
+        "dfu",
+        "neuro",
+        "screen"
+      ],
+      "annot": {
+        "claim": "Temperature asymmetry flags pre-ulcer inflammation about a week before skin breakdown.",
+        "population": "Neuropathic diabetic feet, small single-centre cohort",
+        "needs": [
+          "Pilot site",
+          "Co-investigator"
+        ],
+        "limits": "Needs a standardised room temperature; not tested on darker skin tones separately."
+      },
+      "endorsements": [
+        "d1",
+        "d11"
+      ],
+      "sample": true
+    },
+    {
+      "id": "i2",
+      "title": "Wearable bioimpedance patch for lung fluid monitoring",
+      "kind": "Device",
+      "stage": "Pilot data",
+      "settings": [
+        "Home"
+      ],
+      "summary": "A chest patch tracks thoracic impedance daily and alerts on pulmonary congestion trends in heart failure, aiming to flag decompensation days before readmission.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i3",
+      "title": "Calibrated under-buttock drape for measured blood loss",
+      "kind": "Device",
+      "stage": "Validated",
+      "settings": [
+        "Labour ward"
+      ],
+      "summary": "A graduated collection drape quantifies blood loss after vaginal delivery so postpartum haemorrhage is recognised and escalated earlier than with visual estimation.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i4",
+      "title": "Fingertip camera estimate of haemoglobin",
+      "kind": "Diagnostic",
+      "stage": "Pilot data",
+      "settings": [
+        "Community / camps",
+        "Clinic / OPD"
+      ],
+      "summary": "A smartphone app reads fingertip colour under controlled light to estimate haemoglobin non-invasively for anaemia screening without a needle prick.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i5",
+      "title": "Low-cost fundus camera with automated retinopathy grading",
+      "kind": "Software",
+      "stage": "Validated",
+      "settings": [
+        "Clinic / OPD",
+        "Community / camps"
+      ],
+      "summary": "A handheld fundus camera with an AI grader screens for referable diabetic retinopathy in non-eye clinics.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i6",
+      "title": "Smartphone colour card for newborn bilirubin",
+      "kind": "Diagnostic",
+      "stage": "Pilot data",
+      "settings": [
+        "Home",
+        "Clinic / OPD"
+      ],
+      "summary": "Parents photograph the baby's skin next to a printed colour card; the app estimates bilirubin and tells them when to return for neonatal jaundice review.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i7",
+      "title": "14-day single-lead ECG patch after cryptogenic stroke",
+      "kind": "Device",
+      "stage": "Validated",
+      "settings": [
+        "Clinic / OPD",
+        "Home"
+      ],
+      "summary": "An adhesive ECG patch records continuously for two weeks to detect paroxysmal atrial fibrillation after cryptogenic stroke or TIA.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i8",
+      "title": "Syringe-driven disposable negative pressure wound therapy",
+      "kind": "Device",
+      "stage": "Bench",
+      "settings": [
+        "Clinic / OPD",
+        "Hospital ward",
+        "Home"
+      ],
+      "summary": "A low-cost, power-free NPWT kit uses a spring-loaded syringe to keep negative pressure on chronic wounds such as diabetic foot ulcers and pressure injuries.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i9",
+      "title": "Nurse-led home BP titration protocol over WhatsApp",
+      "kind": "Protocol",
+      "stage": "Pilot data",
+      "settings": [
+        "Home",
+        "Clinic / OPD"
+      ],
+      "summary": "Patients send home blood pressure readings twice a week; a nurse follows a stepwise antihypertensive titration algorithm and flags adherence gaps to the physician.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i10",
+      "title": "Breath sensor for early COPD exacerbation",
+      "kind": "Device",
+      "stage": "Concept",
+      "settings": [
+        "Home"
+      ],
+      "summary": "A handheld volatile-compound breath sensor aims to predict COPD exacerbation several days ahead of symptoms.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i11",
+      "title": "Phone-read urine albumin strip",
+      "kind": "Diagnostic",
+      "stage": "Pilot data",
+      "settings": [
+        "Clinic / OPD",
+        "Community / camps"
+      ],
+      "summary": "A urine strip read by smartphone gives an albumin-to-creatinine ratio (ACR) at point of care to screen diabetic kidney disease.",
+      "source": "",
+      "sample": true
+    },
+    {
+      "id": "i12",
+      "title": "Cough-sound AI triage for tuberculosis",
+      "kind": "Software",
+      "stage": "Bench",
+      "settings": [
+        "Community / camps",
+        "Clinic / OPD"
+      ],
+      "summary": "An app records cough sounds and flags people for sputum testing in tuberculosis screening camps.",
+      "source": "",
+      "sample": true
+    }
+  ],
+  "doctors": [
+    {
+      "id": "d1",
+      "name": "Dr. Kavya Iyer",
+      "specialty": "Diabetology",
+      "city": "Bengaluru",
+      "years": 14,
+      "clinic": "Iyer Diabetes & Foot Clinic",
+      "hospitals": [
+        "Northside Multispeciality Hospital"
+      ],
+      "pubs": 6,
+      "trials": 1,
+      "teaching": true,
+      "reviews": 410,
+      "interests": "diabetic foot, neuropathy screening, offloading",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d2",
+      "name": "Dr. Arjun Menon",
+      "specialty": "Cardiology",
+      "city": "Kochi",
+      "years": 18,
+      "clinic": "Menon Heart Clinic",
+      "hospitals": [
+        "Lakeshore Cardiac Centre"
+      ],
+      "pubs": 9,
+      "trials": 3,
+      "teaching": true,
+      "reviews": 260,
+      "interests": "heart failure, remote monitoring, cardiac rehab",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d3",
+      "name": "Dr. Sneha Patil",
+      "specialty": "Obstetrics & Gynaecology",
+      "city": "Pune",
+      "years": 11,
+      "clinic": "Patil Women's Clinic",
+      "hospitals": [
+        "Riverside Maternity Hospital",
+        "Pune City Hospital"
+      ],
+      "pubs": 3,
+      "trials": 0,
+      "teaching": false,
+      "reviews": 520,
+      "interests": "postpartum haemorrhage, labour ward safety",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d4",
+      "name": "Dr. Farah Siddiqui",
+      "specialty": "Paediatrics",
+      "city": "Hyderabad",
+      "years": 9,
+      "clinic": "Little Steps Child Clinic",
+      "hospitals": [
+        "Deccan Children's Hospital"
+      ],
+      "pubs": 2,
+      "trials": 1,
+      "teaching": true,
+      "reviews": 340,
+      "interests": "adolescent anaemia, school health camps",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d5",
+      "name": "Dr. Rahul Deshmukh",
+      "specialty": "General Medicine",
+      "city": "Pune",
+      "years": 22,
+      "clinic": "Deshmukh Family Clinic",
+      "hospitals": [
+        "Pune City Hospital"
+      ],
+      "pubs": 1,
+      "trials": 0,
+      "teaching": false,
+      "reviews": 880,
+      "interests": "hypertension, diabetes, adherence",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d6",
+      "name": "Dr. Lakshmi Narayan",
+      "specialty": "Paediatrics",
+      "city": "Chennai",
+      "years": 16,
+      "clinic": "Narayan Newborn Clinic",
+      "hospitals": [
+        "Bay Maternity & Child Hospital"
+      ],
+      "pubs": 4,
+      "trials": 2,
+      "teaching": true,
+      "reviews": 300,
+      "interests": "neonatal jaundice, newborn follow-up",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d7",
+      "name": "Dr. Vikram Rao",
+      "specialty": "Cardiology",
+      "city": "Bengaluru",
+      "years": 27,
+      "clinic": "",
+      "hospitals": [
+        "Northside Multispeciality Hospital"
+      ],
+      "pubs": 24,
+      "trials": 6,
+      "teaching": true,
+      "reviews": 150,
+      "interests": "interventional cardiology, atrial fibrillation",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d8",
+      "name": "Dr. Ananya Ghosh",
+      "specialty": "Ophthalmology",
+      "city": "Kolkata",
+      "years": 12,
+      "clinic": "ClearSight Eye Clinic",
+      "hospitals": [
+        "Eastern Eye Institute"
+      ],
+      "pubs": 5,
+      "trials": 1,
+      "teaching": true,
+      "reviews": 610,
+      "interests": "diabetic retinopathy screening, teleophthalmology",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d9",
+      "name": "Dr. Imran Shaikh",
+      "specialty": "Pulmonology",
+      "city": "Mumbai",
+      "years": 10,
+      "clinic": "BreatheWell Chest Clinic",
+      "hospitals": [
+        "Harbour General Hospital"
+      ],
+      "pubs": 3,
+      "trials": 1,
+      "teaching": false,
+      "reviews": 290,
+      "interests": "COPD, tuberculosis, pulmonary rehab",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d10",
+      "name": "Dr. Priya Raman",
+      "specialty": "Nephrology",
+      "city": "Chennai",
+      "years": 7,
+      "clinic": "Raman Kidney Care",
+      "hospitals": [
+        "Bay Multispeciality Hospital"
+      ],
+      "pubs": 4,
+      "trials": 0,
+      "teaching": true,
+      "reviews": 120,
+      "interests": "diabetic kidney disease, albuminuria",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d11",
+      "name": "Dr. Sameer Joshi",
+      "specialty": "General Surgery",
+      "city": "Pune",
+      "years": 15,
+      "clinic": "Joshi Wound & Surgical Clinic",
+      "hospitals": [
+        "Riverside Maternity Hospital",
+        "Pune City Hospital"
+      ],
+      "pubs": 2,
+      "trials": 0,
+      "teaching": false,
+      "reviews": 450,
+      "interests": "chronic wounds, diabetic foot, NPWT",
+      "url": "",
+      "sample": true
+    },
+    {
+      "id": "d12",
+      "name": "Dr. Meghna Bose",
+      "specialty": "Neurology",
+      "city": "Kolkata",
+      "years": 6,
+      "clinic": "",
+      "hospitals": [
+        "Eastern Neuro Centre"
+      ],
+      "pubs": 7,
+      "trials": 2,
+      "teaching": true,
+      "reviews": 80,
+      "interests": "stroke, atrial fibrillation detection",
+      "url": "",
+      "sample": true
+    }
+  ],
+  "nominations": [
+    {
+      "id": "n1",
+      "doctorId": "d1",
+      "by": "Patient",
+      "reasons": [
+        "Open to new treatments or tools",
+        "Follows up after visits"
+      ],
+      "area": "Diabetes & metabolism",
+      "since": "3+ years",
+      "note": "",
+      "created": "2026-11-10",
+      "sample": true
+    },
+    {
+      "id": "n2",
+      "doctorId": "d1",
+      "by": "Family caregiver",
+      "reasons": [
+        "Listens and explains clearly"
+      ],
+      "area": "Diabetes & metabolism",
+      "since": "1–3 years",
+      "note": "",
+      "created": "2026-11-12",
+      "sample": true
+    },
+    {
+      "id": "n3",
+      "doctorId": "d5",
+      "by": "Patient",
+      "reasons": [
+        "Takes time with family",
+        "Honest about risks"
+      ],
+      "area": "",
+      "since": "3+ years",
+      "note": "",
+      "created": "2026-11-15",
+      "sample": true
+    },
+    {
+      "id": "n4",
+      "doctorId": "d6",
+      "by": "Family caregiver",
+      "reasons": [
+        "Open to new treatments or tools"
+      ],
+      "area": "Neonatology",
+      "since": "Under 1 year",
+      "note": "",
+      "created": "2026-11-19",
+      "sample": true
+    }
+  ]
+}
